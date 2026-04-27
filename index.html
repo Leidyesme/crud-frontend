@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tarea">
+            <h1 class="tarea__lista">Gestor de tareas</h1>
+            <form id="tareaForm" class="tarea__input">
+                <input type="text" id="tareaInput" placeholder="Escribe una tarea nueva" autocomplete="off">
+                <button type="submit" id="agregarTarea">Guardar</button>
+            </form>
+            <ul id="listaTareas" class="tarea__lista-tareas"></ul>
+            <p id="mensajeInfo" class="tarea__info"></p>
+        </div>
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>

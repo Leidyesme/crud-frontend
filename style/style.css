@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(560px, 94%);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tarea__lista {
+  margin: 0;
+  font-size: 2rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+.tarea__input {
+  display: flex;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+#tareaInput {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+#agregarTarea {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#agregarTarea:hover {
+  background: #1d4ed8;
+}
+
+.tarea__lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarea__item,
+.tarea__vacio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 12px;
+}
+
+.tarea__texto {
+  flex: 1;
+  margin-right: 16px;
+  word-break: break-word;
+}
+
+.tarea__item {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.tarea__vacio {
+  width: 100%;
+  color: #6b7280;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.tarea__botones {
+  display: flex;
+  gap: 8px;
+}
+
+.boton {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.boton--editar {
+  background: #10b981;
+  color: white;
+}
+
+.boton--editar:hover {
+  background: #059669;
+}
+
+.boton--eliminar {
+  background: #ef4444;
+  color: white;
+}
+
+.boton--eliminar:hover {
+  background: #dc2626;
+}
+
+.tarea__info {
+  margin-top: 12px;
+  color: #4b5563;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.tarea__info--error {
+  color: #b91c1c;
+}
